@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>College Dashboard</h2>
+<p>Welcome to College Management System</p>
+
+<div class="dashboard-container">
+
+    <div class="dashboard-card">
+        <h3>Students</h3>
+        <p>Manage Student Records</p>
+        <a href="/students">View Students</a>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Student Registration</h3>
+        <p>Add New Students</p>
+        <a href="/student-form">Register Now</a>
+    </div>
+
+    <div class="dashboard-card">
+        <h3>Notices</h3>
+        <p>College Latest Notices</p>
+        <a href="/notices">View Notices</a>
+    </div>
+
+</div>
+
+{% endblock %}

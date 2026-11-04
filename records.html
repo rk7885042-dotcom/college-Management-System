@@ -1,0 +1,33 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="page-section">
+    <h1>Student Records</h1>
+    <p>Registered students details are displayed below.</p>
+
+    <table border="1" cellpadding="12" cellspacing="0" width="100%">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Course</th>
+            <th>Semester</th>
+            <th>Email</th>
+        </tr>
+
+        {% for student in students %}
+        <tr>
+            <td>{{ student[0] }}</td>
+            <td>{{ student[1] }}</td>
+            <td>{{ student[2] }}</td>
+            <td>{{ student[4] }}</td>
+            <td>{{ student[5] }}</td>
+            <td>{{ student[6] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</section>
+
+{% endblock %}

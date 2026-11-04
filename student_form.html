@@ -1,0 +1,37 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="login-box">
+
+    <h2>Student Registration</h2>
+    <p>Enter Student Details Below</p>
+
+    <form method="POST" action="/student-form">
+
+        <label>Student Name</label>
+        <input type="text" name="name"
+        placeholder="Enter Full Name" required>
+
+        <label>Email Address</label>
+        <input type="email" name="email"
+        placeholder="Enter Email Address" required>
+
+        <label>Select Course</label>
+        <select name="course" required>
+            <option value="">Select Course</option>
+            <option value="BCA">BCA</option>
+            <option value="BBA">BBA</option>
+            <option value="BA">BA</option>
+            <option value="B.Com">B.Com</option>
+            <option value="MCA">MCA</option>
+        </select>
+
+        <button type="submit">Register Student</button>
+
+    </form>
+
+</div>
+
+{% endblock %}

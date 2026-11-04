@@ -1,0 +1,31 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="login-section">
+    <div class="login-box">
+
+        <h1>College Portal Login</h1>
+        <p>Welcome to Campus Concert Portal</p>
+
+        <form action="/login" method="POST">
+
+            <label>Username</label>
+            <input type="text" name="username"
+                   placeholder="Enter your username" required>
+
+            <label>Password</label>
+            <input type="password" name="password"
+                   placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+        <p>College Management Portal</p>
+
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Campus Concert Portal</h1>
+
+        <h2>
+            Shadeed Darshan Singh Prehuman Public
+            Memorial College for Women, Rayya
+        </h2>
+
+        <p>
+            Welcome to our college management portal.
+            Explore college information, student facilities,
+            announcements and academic activities.
+        </p>
+
+        <a href="/about" class="btn">Explore More</a>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Our Campus Portal</h2>
+
+    <div class="feature-container">
+
+        <div class="feature-card">
+            <h3>About College</h3>
+            <p>Learn more about our college and its facilities.</p>
+            <a href="/about">Read More</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>Student Registration</h3>
+            <p>Access student registration information.</p>
+            <a href="/student">Register</a>
+        </div>
+
+        <div class="feature-card">
+            <h3>Latest Notices</h3>
+            <p>Stay updated with college announcements.</p>
+            <a href="/notices">View Notices</a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
